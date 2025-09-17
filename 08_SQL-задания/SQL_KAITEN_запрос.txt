@@ -1,0 +1,31 @@
+SELECT com.text as comment_text
+       c.title as cards_title
+
+FROM Comments com
+JOIN Cards c ON com.card_id = c.id
+JOIN Boards b ON c.board_id = b.id
+
+WHERE b.title = 'Доска1'
+
+
+Тестирование нового комментария (CRUD):
+
+1. INSERT INTO Comment (id, text, card_id, author_id, created, updated)
+   VALUES (123456, 'Мой первый тестовый комментарий', 123456, 123456, 'YYYY-MM-DD',     YYYY- MM-DD)
+
+2. SELECT * FROM Comment
+   WHERE id = 123456
+
+3. UPDATE Comment
+    SET text = Отредактированный коммент, author_id = 654321
+    WHERE created = 'YYYY-MM-DD';
+
+3. DELETE FROM Comment 
+   WHERE id = 123456
+   
+
+  SELECT * FROM Comment
+  id = 123456
+
+
+
