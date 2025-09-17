@@ -5,7 +5,7 @@
 В этом репозитории собраны мои работы: тестовая документация, автотесты, тестирование API, задания по SQL.
 
 ## Инструменты:
-- DevTools, Postman, YouTrack, Jira, XMind
+- DevTools, Postman, YouTrack, Jira, XMind, Git
 - SQL (SELECT, WHERE, JOIN, COUNT, INSERT, UPDATE, DELETE)
 - SELENIUM (C#), начальный уровень
 
@@ -14,6 +14,7 @@
 - диаграммы состояний и переходов
 - mind-карты
 - таблицы принятия решений
+- попарное тестирование
 - api-тесты
 - баг репорты
 - sql-задания
