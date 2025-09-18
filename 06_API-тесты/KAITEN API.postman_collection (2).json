@@ -35,9 +35,10 @@
 								"type": "text"
 							},
 							{
-								"key": "Authorization",
-								"value": "Bearer 2dac4f2c-3dfa-4d6e-b6fa-165234ed5281",
-								"type": "text"
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
 							}
 						],
 						"body": {
