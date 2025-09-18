@@ -1,0 +1,33 @@
+Опишите, что делают операторы в перечисленных ниже примерах:
+
+1) select * from t_zdar where typ in ('IKW');
+
+Ответ:
+
+- SELECT * - выбирает все столбцы из таблицы.
+- FROM t_zdar - указывает, что данные нужно брать из таблицы t_zdar.
+- WHERE typ IN ('IKW') фильтрует строки: в результат попадут только те, где значение в столбце typ равно 'IKW'.
+
+==================================================
+
+2) select p.id_przy, p.numer, z.data_biznes from t_przy p
+   join t_zdar z on z.umow_id_umow = p.id_przy
+   where z.data_biznes = '28.12.2023';
+
+Ответ:
+
+- SELECT p.id_przy, p.numer, z.data_biznes – выбирает три столбца: id_przy и numer из таблицы t_przy, ф также data_biznes из таблицы t_zdar.
+- FROM t_przy р - данные берутся из таблицы t_przy, которой присвоен псевдоним р
+- JOIN t_zdar z on z.umow_id_umow = p.id_przy – соединяет таблицы t_przy и t_zdar, по условию: значение поля umow_id_umow из t_zdar должно совпадать со значением id_przy из t_przy. 
+  Таблице t_zdar присвоен псевдоним z.
+- WHERE z.data_biznes = '28.12.2023' - фильтрует строки, оставляя только те, где в таблице t_zdar поле data_biznes равно '28.12.2023.
+
+==================================================
+
+3) update t_przy set numer = &#39;63-01-001/12_2&#39; where id_przy = 39138013;
+
+Ответ:
+
+- UPDATE t_przy - указывает, что будут изменяться строки в таблице t_przy.
+- SET numer = '63-01-001/12_2' - задает новое значение для столбца numer.
+- WHERE id_przy = 39138013 - ограничивает действие обновления только той строкой, где id_przy равно 39138013. 
