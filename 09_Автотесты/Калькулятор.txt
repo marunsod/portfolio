@@ -1,0 +1,39 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Введи число");
+		double a = Convert.ToDouble(Console.ReadLine());
+		
+		Console.WriteLine("Введи число");
+		double b = Convert.ToDouble(Console.ReadLine());
+		
+		Console.WriteLine ("Введи операцию (+, -, *, /):");
+		string op = Console.ReadLine();
+		
+		double result = 0;
+			
+			switch (op)
+			{
+				case "+": result = a + b; break;
+				case "-": result = a - b; break;
+				case "*": result = a * b; break;
+				case "/":
+					if (b != 0)
+					{
+					result = a / b;
+					}
+					else
+					{Console.WriteLine("Делить на ноль нельзя!");
+					 return;
+					}
+					break;
+				default: Console.WriteLine("Неверная операция"); return;
+			}
+		
+		Console.WriteLine($"Результат: {result}");
+		
+	}
+}
